@@ -167,8 +167,8 @@ async def create_profile_description(message: types.Message, state: FSMContext):
 		#прерывание функции
 		return
 #хендлер для заполнения города
-@dp.message_handler(state=CreateProfile.city)
-async def create_profile_city(message: types.Message, state: FSMContext):
+@dp.message_handler(state=CreateProfile.faculty)
+async def create_profile_faculty(message: types.Message, state: FSMContext):
 	if str(message.text) == 'Выйти❌':
 		await state.finish()
 		await magic_start(message)
