@@ -52,7 +52,7 @@ async def start(message : types.Message):
 
 	magic_start.add(button_start)
 	await message.answer('Привет👋\n\nDatITMO - это возможность познакомиться с кем-то  не выходя из универа!\n\nDatITMO - место для знакомств : \n - КТУшников🛹\n - ФТМФшников \n и остальных',reply_markup=magic_start)
-	await message.answer_sticker('6005884016:AAEWegzDFQGdzfWrcn_mGWiOm8cS64nBei0')
+	await message.answer_sticker('CAADAgADZgkAAnlc4gmfCor5YbYYRAI')
 	if(not db.user_exists(message.from_user.id)):
 		#если юзера нет в базе добавляем его
 		db.add_user(message.from_user.username,message.from_user.id,message.from_user.full_name)
