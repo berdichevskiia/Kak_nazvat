@@ -107,7 +107,7 @@ async def magic_start(message : types.Message):
 class CreateProfile(StatesGroup):
 	name = State()
 	description = State()
-	city = State()
+	faculty = State()
 	photo = State()
 	sex = State()
 	age = State()
